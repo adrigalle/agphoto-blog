@@ -1,0 +1,48 @@
+.instagram {
+    position: relative;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    background: #b39082c7;
+    padding-top:50px;
+}
+
+.insta-content {
+    position: absolute; 
+    top: 300px; 
+    left: 0; 
+    width: 100%; 
+}
+.insta-content h4 {
+    font-size: 2vw;
+    letter-spacing: 0.1em;
+    margin: 0;
+    backdrop-filter: blur(5px); /* adds blur to everything behind it */
+    -webkit-backdrop-filter: blur(5px);
+    font-family: 'Comfortaa', cursive; 
+    padding: 8px;
+}
+.insta-content span {
+    color: white; 
+    font: bold 24px/45px Helvetica, Sans-Serif; 
+    letter-spacing: -1px;  
+    background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px; 
+}
+.bgWrap {
+    position: relative;
+    text-align: center;
+    width: 100vw;
+    overflow: hidden;
+    z-index: -1;
+    padding: 0;
+}
+.bgText {
+    margin: 0;
+    font-size: 2rem;
+    line-height: 3rem;
+    text-align: center;
+    padding-top: 40vh;
+    text-shadow: 1px 1px 1px #3c5c5e;
+}

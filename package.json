@@ -6,12 +6,18 @@
     "start": "next start"
   },
   "dependencies": {
-    "data-fns": "^0.1.8",
+    "@next/font": "^13.1.1",
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "^5.2.3",
     "date-fns": "^2.29.3",
+    "fs": "0.0.1-security",
     "gray-matter": "^4.0.3",
     "next": "latest",
     "react": "18.2.0",
+    "react-bootstrap": "^2.7.0",
     "react-dom": "18.2.0",
+    "react-multi-carousel": "^2.8.2",
+    "react-parallax": "^3.5.1",
     "remark": "^14.0.2",
     "remark-html": "^15.0.1"
   }
