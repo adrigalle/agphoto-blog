@@ -5,10 +5,11 @@ import utilStyles from '../styles/utils.module.css';
 import footStyles from './footer.module.css';
 import Image from 'next/image';
 import instagramPic from '../public/images/combos/instagram-970x90.png';
+import Stack from 'react-bootstrap/Stack';
 
 export default function Footer() {
     return (
-        <section styles={ utilStyles.container } style={{ marginTop: '50px' }}>
+        <section styles={ utilStyles.container } style={{ marginTop: '50px', marginBottom: '50px' }}>
 
 
 
@@ -42,8 +43,11 @@ export default function Footer() {
 
 
 
-            <Container fluid>
-                <Row className="justify-content-md-center">
+
+
+
+            <Container fluid gap={500}>
+                <Row className="justify-content-md-center text-center">
 
                     <Col sm>
                         <p>Photographing families and portraits in the Central Valley, CA area!</p>
@@ -53,31 +57,31 @@ export default function Footer() {
                 
                     <Col sm>
                         <h3>find your way around</h3>
-                        <ul className="footer-list">
-                            <li className="list-item">
+                        <ul styles={ footStyles.footerList }>
+                            <li styles={ footStyles.listItem }>
                                 <a href="/">Home</a>
                             </li>
-                            <li className="list-item">
+                            <li styles={ footStyles.listItem }>
                                 <a href="/about">About me</a>
                             </li>
-                            <li className="list-item">
+                            <li styles={ footStyles.listItem }>
                                 <a href="/services">Services</a>
                             </li>
-                            <li className="list-item">
+                            <li styles={ footStyles.listItem }>
                                 <a href="/gallery">Gallery</a>
                             </li>
-                            <li className="list-item">
+                            <li styles={ footStyles.listItem }>
                                 <a href="/faqs">FAQ's</a>
                             </li>
-                            <li className="list-item">
+                            <li styles={ footStyles.listItem }>
                                 <a href="/contact">Contact</a>
                             </li>
                         </ul>
                 
                     </Col>
                 
-                    <Col sm>
-                        <a href="/home"><img src="images/logos/color-circ.jpg" style={{width: 200}}/></a>
+                    <Col className='justify-content-md-center' sm>
+                        <a href="/home"><img src="images/logos/color-circ.jpg" style={{width: 200, margin:"auto" }}/></a>
                     </Col>
 
                 </Row>
