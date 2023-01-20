@@ -5,8 +5,6 @@ import Image from 'next/image'; // extension of the html <img> tag that resizes,
 import Layout, { siteTitle } from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
 import Date from '../components/date';
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
 import PriceCards from '../components/price';
 import Row from 'react-bootstrap/Row';
 import { Rerousel } from 'rerousel';
