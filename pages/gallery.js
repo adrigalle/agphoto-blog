@@ -26,9 +26,9 @@ export default function Gallery() {
                     <Row lg={4} md={2} xs={1} style={{ width:'100vw', margin: 0, textAlign: 'center' }}>
 
                         <Col className={ utilStyles.imgCols } style={{ padding: 0}}>
-                            <Image width={480} height={720} className={ utilStyles.galleryImg } src="/images/children/DSC00800.jpg"/>
-                            <Image width={480} height={720} className={ utilStyles.galleryImg } src="/images/children/03-20 Viri Unicorn-020-12.jpg"/>
-                            <Image width={480} height={720} className={ utilStyles.galleryImg } src="/images/children/DSC03007.jpg"/>
+                            <Image width={480} height={720} className={ utilStyles.galleryImg } priority src="/images/children/DSC00800.jpg"/>
+                            <Image width={480} height={720} className={ utilStyles.galleryImg } priority src="/images/children/03-20 Viri Unicorn-020-12.jpg"/>
+                            <Image width={480} height={720} className={ utilStyles.galleryImg } priority src="/images/children/DSC03007.jpg"/>
                             <Image width={480} height={720} className={ utilStyles.galleryImg } src="/images/children/DSC03693.jpg"/>
                             <Image width={480} height={720} className={ utilStyles.galleryImg } src="/images/children/DSC04319.jpg"/>
                             <Image width={480} height={720} className={ utilStyles.galleryImg } src="/images/children/untitled-22.jpg"/>
@@ -36,7 +36,7 @@ export default function Gallery() {
                         </Col>
 
                         <Col className={ utilStyles.imgCols } style={{ padding: 0 }}>
-                            <Image width={480} height={720} className={ utilStyles.galleryImg } src="/images/couples/DSC08513.jpg"/>
+                            <Image width={480} height={720} className={ utilStyles.galleryImg } priority src="/images/couples/DSC08513.jpg"/>
                             <Image width={480} height={720} className={ utilStyles.galleryImg } src="/images/couples/DSC07641.jpg"/>
                             <Image width={480} height={720} className={ utilStyles.galleryImg } src="/images/couples/DSC09861.jpg"/>
                             <Image width={480} height={720} className={ utilStyles.galleryImg } src="/images/couples/untitled-14.jpg"/>
@@ -46,7 +46,7 @@ export default function Gallery() {
                         </Col>
 
                         <Col className={ utilStyles.imgCols } style={{ padding: 0 }}>
-                            <Image width={480} height={720} className={ utilStyles.galleryImg } src="/images/families/DSC01616.jpg"/>
+                            <Image width={480} height={720} className={ utilStyles.galleryImg } priority src="/images/families/DSC01616.jpg"/>
                             <Image width={480} height={720} className={ utilStyles.galleryImg } src="/images/families/DSC01467-Edit.jpg"/>
                             <Image width={480} height={720} className={ utilStyles.galleryImg } src="/images/families/DSC03730.jpg"/>
                             <Image width={480} height={720} className={ utilStyles.galleryImg } src="/images/families/DSC00959.jpg"/>
@@ -56,7 +56,7 @@ export default function Gallery() {
                         </Col>
 
                         <Col className={ utilStyles.imgCols } style={{ padding: 0 }}>
-                            <Image width={480} height={720} className={ utilStyles.galleryImg } src="/images/portraits/DSC07946.jpg"/>
+                            <Image width={480} height={720} className={ utilStyles.galleryImg } priority src="/images/portraits/DSC07946.jpg"/>
                             <Image width={480} height={720} className={ utilStyles.galleryImg } src="/images/portraits/DSC00506.jpg"/>
                             <Image width={480} height={720} className={ utilStyles.galleryImg } src="/images/portraits/AyarzaFamily-19.jpg"/>
                             <Image width={480} height={720} className={ utilStyles.galleryImg } src="/images/portraits/DSC02275.jpg"/>
