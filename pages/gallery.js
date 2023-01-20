@@ -74,7 +74,7 @@ export default function Gallery() {
             <section>
                 <div className="block">
                     <h3>for more examples of my work, visit my instagram page</h3>
-                    <a href="https://www.instagram.com/ag.photography.etc/" target="_blank"><h3>@ag.photography.etc</h3></a>
+                    <a href="https://www.instagram.com/ag.photography.etc/" target="_blank" className={ utilStyles.emailPhone }><h3>@ag.photography.etc</h3></a>
                 </div>
             </section>
 

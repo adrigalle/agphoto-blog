@@ -19,14 +19,14 @@ const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1450 },
     items: 5,
-    partialVisibilityGutter: 40
+    partialVisibilityGutter: 20
   },
-  tablet: {
+  other: {
     breakpoint: { max: 1450, min: 800 },
     items: 3,
     partialVisibilityGutter: 10
   },
-  other: {
+  tablet: {
     breakpoint: { max: 800, min: 598 },
     items: 2,
     partialVisibilityGutter: 50

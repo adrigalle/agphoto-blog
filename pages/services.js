@@ -9,6 +9,8 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import Container from 'react-bootstrap/Container';
 import { Parallax , Background } from 'react-parallax';
+import PriceCards from '../components/price';
+import Row from 'react-bootstrap/Row';
 
 const responsive = {
     desktop: {
@@ -121,74 +123,42 @@ export default function Services() {
 
             <section>
                 <div className={ utilStyles.container }>
-                    <div className="card-group mx-auto">
-                        <div className="card mx-auto">
-                            <img className="card-img-top" src="images/families/02-26 Celina Almonds-015-9.jpg" alt="Card image cap"/>
-                            <div className="card-body">
-                            <h2 className="card-title">Short n' Sweet</h2>
-                            <div className="card-text">
-                                This little session is perfect for busy families, kids that will not allow for more than just 30 minutes, or those that only need a couple of updated photos. 
-                                <br/><br/>This package includes:
-                                <ul>
-                                    <li >Up to 30 minutes</li>
-                                    <li>10 Edited Images</li>
-                                    <li>Private Online Gallery</li>
-                                    <li>Print Release</li>
-                                </ul>
-                            </div>
-                            </div>
-                            <div className="card-footer">
-                                <h3>Starting at: $125</h3>
-                            </div>
-                        </div>
-
-                        <div className="card mx-auto">
-                            <img className="card-img-top" src="images/couples/DSC01797.jpg" alt="Card image cap"/>
-                            <div className="card-body">
-                            <h2 className="card-title">Perfecto</h2>
-                            <div className="card-text">
-                            The perfect amount of time needed to get a really good variety of photos with you family, just you, just your special someone, or whatever you like!
-                                <br/><br/>This package includes:
-                                <ul>
-                                    <li >Up to 60 minutes</li>
-                                    <li>20 Edited Images</li>
-                                    <li>Private Online Gallery</li>
-                                    <li>Print Release</li>
-                                </ul>
-                            </div>
-                            </div>
-                            <div className="card-footer">
-                                <h3>Starting at: $200</h3>
-                            </div>
-                        </div>
-
-                        <div className="card mx-auto">
-                            <img className="card-img-top" src="images/families/DSC07951.jpg" alt="Card image cap"/>
-                            <div className="card-body">
-                            <h2 className="card-title">Abundance!</h2>
-                            <div className="card-text">
-                                With how fast I can go, this might be overkill for some, but it is great for larger families, those that want multiple outfit changes, or just taking it easy.
-                                <br/><br/>This package includes:
-                                <ul>
-                                    <li >Up to 90 minutes</li>
-                                    <li>All edited images (60+)</li>
-                                    <li>Private Online Gallery</li>
-                                    <li>Print Release</li>
-                                </ul>
-                            </div>
-                            </div>
-                            <div className="card-footer">
-                                <h3>Starting at: $275</h3>
-                            </div>
-                        </div>
+                    <div className={ utilStyles.rowAround }>
+                        <PriceCards
+                            header= "Short n' Sweet"
+                            topimage="images/families/02-26 Celina Almonds-015-9.jpg"
+                            description="This little session is perfect for busy families, kids that will not allow for more than just 30 minutes, or those that only need a couple of updated photos."
+                            price="Starting at: $125"
+                            item1="Up to 30 minutes"
+                            item2="10 Edited Images"
+                         />
+                         <PriceCards
+                            header= "Perfecto"
+                            topimage="images/couples/DSC01797.jpg"
+                            description="The perfect amount of time needed to get a really good variety of photos with you family, just you, just your special someone, or whatever you like!"
+                            price="Starting at: $200"
+                            item1="Up to 60 minutes"
+                            item2="20 Edited Images"
+                            
+                         />
+                         <PriceCards
+                            header= "Abundance!"
+                            topimage="images/families/DSC07951.jpg"
+                            description="With how fast I can go, this might be overkill for some, but it is great for larger families, those that want multiple outfit changes, or just taking it easy."
+                            price="Starting at: $275"
+                            item1="Up to 90 minutes"
+                            item2="All edited images (60+)"
+                            
+                         />
                     </div>
                 </div>
             </section>
 
+
             <br/><br/>
 
-            <section>
-                <div className={ utilStyles.block }>
+            <section className={ utilStyles.block }>
+                <div className='text-center'>
                     <p>
                         If you don't see something you are interested in, please don't hesitate to give me a contact me and we'll see what we can do!
                     </p>

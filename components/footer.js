@@ -11,8 +11,6 @@ export default function Footer() {
     return (
         <section className={ utilStyles.container } style={{ marginTop: '20px', marginBottom: '20px' }}>
 
-
-
             <div className={ styles.instagram }>
 
                 <div>
@@ -33,11 +31,6 @@ export default function Footer() {
                 </div>
 
             </div>
-            
-
-
-
-
 
 
             <div className={ utilStyles.container }>

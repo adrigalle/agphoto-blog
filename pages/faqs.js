@@ -75,8 +75,8 @@ export default function FAQs() {
             </section>
 
 
-            <section>
-                <div className={ utilStyles.block }>
+            <section className={ utilStyles.block }>
+                <div className='text-center'>
                     <h3>If your question wasn't answered, please don't hesitate to shoot me a message!</h3>
                     <br/>
                     <a href="/contact">

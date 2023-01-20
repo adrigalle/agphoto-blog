@@ -5,15 +5,21 @@
     overflow: hidden;
     background: #b39082c7;
 }
+.instaImg{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+}
 .instagramImg {
-    width: 100vw;
-    height: auto;
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
     opacity: 0.5;
 }
-@media (max-width: 680px) {
+@media (max-width: 1500px) {
     .instagramImg{
-        width: auto;
-        height: 100px;
+        min-width: 1920px;
     }
 }
 .instaContent {
@@ -79,6 +85,5 @@
 }
 .listItem a {
     text-decoration: none;
-    font-family: 'Comfortaa', cursive; 
     color: #e5bcac;
 }
