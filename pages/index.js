@@ -8,6 +8,7 @@ import utilStyles from '../styles/utils.module.css';
 import { getSortedPostsData } from '../lib/posts'; // gets the posts sorted by data from the lib folder
 import Date from '../components/date';
 import Button from 'react-bootstrap/Button';
+import heroImg from '../public/images/my-family/DSC00334-Edit.jpg';
 
 import TestimonialCards from '../components/testimonials';
 
@@ -32,8 +33,9 @@ export default function Home() {
         <title>{siteTitle}</title>
       </Head> 
 
-      <section className={` ${utilStyles.container} ${ utilStyles.parallax } `} style={{ backgroundImage: "url('images/my-family/DSC00334-Edit.jpg')", minHeight: '600px', boxShadow: "inset 0 0 0 1000px #ffffff75"}}>
-
+      <section className={` ${utilStyles.container} ${ utilStyles.parallax } `} style={{ backgroundImage: "url('/images/my-family/DSC00334-Edit.jpg')", minHeight: '600px', boxShadow: "inset 0 0 0 1000px #ffffff75"}}>
+        <Image width={1920} height={600} priority style={{ display: 'none' }} src="/images/my-family/DSC00334-Edit.jpg" alt="" />
+        
         <div style={{background: "#ffffff7a", backdropFilter: "blur(5px)", minWidth:" 300px"}} className={ utilStyles.parallaxText }>
 
           <h3>Central Valley photographer for</h3>
@@ -65,7 +67,7 @@ export default function Home() {
           </div>
       </section>
 
-      <section className={` ${utilStyles.container} ${ utilStyles.parallax } `} style={{ backgroundImage: "url('images/scenes/DSC02443.jpg')", minHeight: '200px'}}>
+      <section className={` ${utilStyles.container} ${ utilStyles.parallax } `} style={{ backgroundImage: "url('images/scenes/DSC02443.jpg')", minHeight: '250px'}}>
 
         <div className={ utilStyles.parallaxText }>
           <h3>AG Photography etc helps you capture beautiful picture and keeps everyone having stress-free fun</h3>
