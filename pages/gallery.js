@@ -24,7 +24,7 @@ export default function Gallery() {
             <section>
                 <Container fluid>
 
-                    <Row style={{ gap: 0 }}>
+                    <Row lg={4} md={2} xs={1} style={{ gap: 0 }}>
 
                         <Col style={{ padding: 0 }}>
                             <img src="/images/children/DSC00800.jpg"/>
