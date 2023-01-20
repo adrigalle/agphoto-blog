@@ -19,13 +19,13 @@ export default function PriceCards(props) {
                 {props.description}
                 <br/><br/>
                 This package includes:
-                <ul>
-                    <li>{props.item1}</li>
-                    <li>{props.item2}</li>
-                    <li>Private Online Gallery</li>
-                    <li>Print Release</li>
-                </ul>
             </Card.Text>
+            <ul style={{ color: "#787878" }}>
+                <li><p>{props.item1}</p></li>
+                <li><p>{props.item2}</p></li>
+                <li><p>Private Online Gallery</p></li>
+                <li><p>Print Release</p></li>
+            </ul>
 
 
             <Card.Footer className={ styles.cardFooter }>
