@@ -165,3 +165,16 @@
     height: 300px;
   }
 }
+
+
+/* ***** about ***** */
+.aboutPics {
+  max-width: 25vw; 
+  min-width: 25vw;
+  height: auto;
+}
+@media (max-width: 992px) {
+  .aboutPics {
+    min-width: 100vw;
+  }
+}

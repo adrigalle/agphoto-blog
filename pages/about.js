@@ -48,7 +48,7 @@ export default function About() {
 
             <section>
                 <div className={ utilStyles.block }>
-                    <div className="flex-row-container">
+                    <div className={ utilStyles.rowToCol }>
                         <div>
                             <h4>WHO IS BEHIND THE LENS?</h4>
                             <br/>
@@ -59,9 +59,16 @@ export default function About() {
                             </p>
                         </div>
 
-                        <img src="images/my-family/DSC05842.jpg"/>
+                        <img src="images/my-family/DSC05842.jpg" width={250}/>
                     </div>
                 </div>
+            </section>
+
+            <section className={` ${ utilStyles.container } ${ utilStyles.rowToCol }` } style={{ maxWidth: "100vw", gap: 0 }}>
+                <Image src="/images/scenes/DSC07453.jpg" width={480} height={720} className={ utilStyles.aboutPics}/>
+                <Image src="/images/dogs/DSC09251.jpg" width={480} height={720} className={ utilStyles.aboutPics}/>
+                <Image src="/images/dogs/DSC00522.jpg" width={480} height={720} className={ utilStyles.aboutPics}/>
+                <Image src="/images/my-family/DSC02368.jpg" width={480} height={720} className={ utilStyles.aboutPics}/>
             </section>
 
             <section>
