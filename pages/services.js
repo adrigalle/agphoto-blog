@@ -7,8 +7,6 @@ import utilStyles from '../styles/utils.module.css';
 import Date from '../components/date';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import Container from 'react-bootstrap/Container';
-import { Parallax , Background } from 'react-parallax';
 import PriceCards from '../components/price';
 import Row from 'react-bootstrap/Row';
 
@@ -96,18 +94,16 @@ export default function Services() {
                 </div>
             </section>
 
-            <section className={ utilStyles.container }>
-                <Parallax bgImage="/images/scenes/DSC02382.jpg" strength={10} blur={{ min: -1, max: 3 }} >
-                    <div style={{ height: 400, background: "#ffffffa8" }} className="text-center align-items-center">
-                        <div style={{ padding: "20px", position: "absolute", maxWidth: "900px", minWidth:"350px", position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%" }} className="text-center align-items-center">
-                            <h2>Investment</h2>
-                            <h3>There's so much more to photography than the click of a shutter</h3>
-                            <p className="block">
-                                I’ve spent years working hard on my craft, investing in gear, and education. Your investment reflects the value of the skills I’ve acquired and the services I provide. I go the extra mile diving deep into your story making sure we capture your unique legacy. Exactly as you remember it. 
-                            </p>
-                        </div>
-                    </div>
-                </Parallax>
+            <section className={` ${utilStyles.container} ${ utilStyles.parallax } `} style={{ backgroundImage: "url('images/scenes/DSC02382.jpg')", width:'100vw', minHeight: '400px', textAlign: 'center', boxShadow: "inset 0 0 0 1000px #ffffffa8" }}>
+
+                <div style={{ width: "100%", position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%", maxWidth: "900px", padding: "20px" }} className="text-center">
+                    <h2>Investment</h2>
+                    <h3>There's so much more to photography than the click of a shutter</h3>
+                    <p className="block">
+                        I’ve spent years working hard on my craft, investing in gear, and education. Your investment reflects the value of the skills I’ve acquired and the services I provide. I go the extra mile diving deep into your story making sure we capture your unique legacy. Exactly as you remember it. 
+                    </p>
+                </div>
+            
             </section>
 
             <section>

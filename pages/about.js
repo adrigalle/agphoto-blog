@@ -4,7 +4,6 @@ import Link from 'next/link'; // this allows for changing pages without a full r
 import Image from 'next/image'; // extension of the html <img> tag that resizes, optimizes, and lazy loads images
 import Layout, { siteTitle } from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
-import { Parallax } from 'react-parallax';
 
 export default function About() {
     return (
@@ -32,10 +31,8 @@ export default function About() {
                 </div>
             </section>
 
-            <section className={ utilStyles.container }>
-                <Parallax bgImage="/images/families/DSC01518-cropped.jpg" strength={500} blur={{ min: -1, max: 3 }} bgImageStyle={{ width: "100vw", height: "auto"}}>
-                    <div style={{ height: 600, background: "#ffffff98" }}></div>
-                </Parallax>     
+            <section className={` ${utilStyles.container} ${ utilStyles.parallax } `} style={{ backgroundImage: "url('images/families/DSC01518-cropped.jpg')", width:'100vw', minHeight: '500px'}}>
+                <div style={{ height: 600, background: "#ffffff98" }}/>
             </section>
 
             <section>

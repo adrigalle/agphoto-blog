@@ -111,3 +111,20 @@
 .emailPhone:hover {
   color: #e5bcac;
 }
+
+
+.parallax {
+  overflow: hidden; 
+  position: relative;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -moz-background-size: cover; 
+  -webkit-background-size: cover; 
+}
+@media (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}

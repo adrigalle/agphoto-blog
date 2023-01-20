@@ -5,8 +5,6 @@ import Image from 'next/image'; // extension of the html <img> tag that resizes,
 import Layout, { siteTitle } from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
 import Date from '../components/date';
-import Container from 'react-bootstrap/Container';
-import { Parallax } from 'react-parallax';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
@@ -19,16 +17,16 @@ export default function Contact() {
                 <title>Contact | {siteTitle}</title>
             </Head>
 
-            <div style={{ backgroundImage: 'url(/images/scenes/DSC09798.jpg)', backgroundRepeat: "no-repeat", backgroundSize: "cover", width: "100vw", backgroundAttachment: "fixed"  }}>
+            <div  className={` ${utilStyles.container} ${ utilStyles.parallax } `} style={{ backgroundImage: 'url(/images/scenes/DSC09798.jpg)', width:'100vw', minHeight: '600px', textAlign: 'center', boxShadow: "inset 0 0 0 1000px #ffffff75", padding:20 }}>
 
 
-                <div style={{ background: "#ffffff98", padding: 20 }}>
-                  <div style={{background: "#ffffff7a", backdropFilter: "blur(5px)", padding: "20px", minWidth: "380px", width: "45vw", textAlign: "center", margin: "auto" }} className="text-center justify-content-center">
+
+                  <div style={{background: "#ffffffa8", backdropFilter: "blur(5px)", padding: "20px", minWidth: "380px", width: "45vw", textAlign: "center", margin: "auto", padding: '20px' }} className="text-center justify-content-center">
 
 
                   <div>
 
-                    <div style={{ maxWidth: 1000, padding: 50 }}>
+                    <div style={{ maxWidth: 1000, padding: 20 }}>
                         <h2>Contact me!</h2>
                         <br/>
 
@@ -66,8 +64,6 @@ export default function Contact() {
                     </div>
                     </div>
 
-
-                  </div>
                 </div>
             </div>
 
