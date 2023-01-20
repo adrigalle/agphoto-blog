@@ -15,8 +15,8 @@ export default function About() {
  
             <section>
                 <div className={ utilStyles.block }>
-                    <div className={ utilStyles.row }>
-                        <Image src="/images/children/DSC03631.jpg" width={100} height={300}/>
+                    <div className={ utilStyles.rowToCol }>
+                        <img src="/images/children/DSC03631.jpg" width={300} height={'auto'}/>
                         <div>
                             <h2>You're tired of watching it all fly by</h2>
                             <h3>and you want time to just hold up and stand still</h3>

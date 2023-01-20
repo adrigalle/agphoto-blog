@@ -47,9 +47,11 @@ export default function Home() {
     
       <section >
           <div className={ utilStyles.block }>
-              <div className={ utilStyles.row }>
+              <div className={ utilStyles.rowToCol }>
                   <div>
                       <h2>Welcome to my page!</h2>
+                      <br/>
+                      <br/>
                       <p>
                           Like having beautiful background sceneries that fuel you and your kids' energy? Well you are in luck! I am a natural light photographer that edits in a light and vibrant style. <br/>
                           <br/>
@@ -58,7 +60,7 @@ export default function Home() {
                           If you are wanting pictures anywhere in Modesto, Ceres, Turlock, Ripon (basically Stanislaus County and surrounding counties) I'm your gal!
                       </p>
                   </div>
-                  <img src="images/my-family/DSC02653.jpg" width={200}/>
+                  <img src="images/my-family/DSC02653.jpg" width={300} height={'auto'}/>
               </div>
           </div>
       </section>
