@@ -22,7 +22,7 @@ export default function Gallery() {
             <h3>here are just a few pictures that show my style of photography</h3>
 
             <section>
-                <Container fluid>
+                <div className={ utilStyles.container}>
 
                     <Row lg={4} md={2} xs={1} style={{ gap: 0 }}>
 
@@ -68,7 +68,7 @@ export default function Gallery() {
 
                     </Row>
 
-                </Container>
+                </div>
             </section>
 
             <section>

@@ -55,9 +55,9 @@ export default function Home() {
         <title>{siteTitle}</title>
       </Head> 
 
-      <section className={` ${utilStyles.container} ${ utilStyles.parallax } `} style={{ backgroundImage: "url('images/my-family/DSC00334-Edit.jpg')", width:'100vw', minHeight: '600px', textAlign: 'center', boxShadow: "inset 0 0 0 1000px #ffffff75"}}>
+      <section className={` ${utilStyles.container} ${ utilStyles.parallax } `} style={{ backgroundImage: "url('images/my-family/DSC00334-Edit.jpg')", minHeight: '600px', boxShadow: "inset 0 0 0 1000px #ffffff75"}}>
 
-        <div style={{background: "#ffffff7a", backdropFilter: "blur(5px)", padding: "20px", position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)", minWidth:" 300px"}} className="text-center">
+        <div style={{background: "#ffffff7a", backdropFilter: "blur(5px)", minWidth:" 300px"}} className={ utilStyles.parallaxText }>
 
           <h3>Central Valley photographer for</h3>
           <h1>everyday family life stages</h1>
@@ -86,9 +86,9 @@ export default function Home() {
           </div>
       </section>
 
-      <section className={` ${utilStyles.container} ${ utilStyles.parallax } `} style={{ backgroundImage: "url('images/scenes/DSC02443.jpg')", width:'100vw', minHeight: '200px', textAlign: 'center', boxShadow: "inset 0 0 0 1000px #ffffff89"}}>
+      <section className={` ${utilStyles.container} ${ utilStyles.parallax } `} style={{ backgroundImage: "url('images/scenes/DSC02443.jpg')", minHeight: '200px'}}>
 
-        <div style={{ width: "100%", position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%" }} className="text-center">
+        <div className={ utilStyles.parallaxText }>
           <h3>AG Photography etc helps you capture beautiful picture and keeps everyone having stress-free fun</h3>
           <h4>IT CAN BE A FAMILY OF 5 OR A FAMILY OF 2, OR PORTRAITS OF ANYONE IN YOUR FAMILY!</h4>
         </div>

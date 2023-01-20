@@ -9,6 +9,8 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import PriceCards from '../components/price';
 import Row from 'react-bootstrap/Row';
+import { Rerousel } from 'rerousel';
+import { useRef } from 'react';
 
 const responsive = {
     desktop: {
@@ -44,6 +46,7 @@ export default function Services() {
         "/images/couples/untitled-14.jpg",
         "/images/children/DSC01627.jpg"
       ];
+      const imgCarousel = useRef(null);
 
     return ( 
         <Layout services>
@@ -52,32 +55,20 @@ export default function Services() {
                 <title>Services | {siteTitle}</title>
             </Head>
 
-            <section>
-                <div className={ utilStyles.container }>
-                <Carousel
-                    swipeable={true}
-                    draggable={false}
-                    showDots={true}
-                    partialVisible={true}
-                    responsive={responsive}
-                    ssr={true} // means to render carousel on server-side.
-                    infinite={true}
-                    autoPlay={true}
-                    autoPlaySpeed={3000}
-                    keyBoardControl={true}
-                    customTransition="all .5"
-                    transitionDuration={500}
-                    containerClass="carousel-container"
-                    removeArrowOnDeviceType={["tablet", "mobile"]}
-                    dotListClass="custom-dot-list-style"
-                    itemClass="image-item"
-                >
-                    {carouselImages.map((image, index) => (
-                        <div key={index}><img src={image}/></div>
-                    ))}
-
-                </Carousel>
-                </div>
+            <section className={ utilStyles.container }>
+                <Rerousel itemRef={ imgCarousel } interval={3000}>
+                    <img src="/images/children/DSC02772.jpg" ref={imgCarousel} className={ utilStyles.carouselImages}/>
+                    <img src="/images/children/03-20 Viri Unicorn-020-12.jpg" className={ utilStyles.carouselImages}/>
+                    <img src="/images/portraits/untitled-16.jpg" className={ utilStyles.carouselImages}/>
+                    <img src="/images/portraits/DSC6735.jpg" className={ utilStyles.carouselImages}/>
+                    <img src="/images/children/untitled-23.jpg" className={ utilStyles.carouselImages}/>
+                    <img src="/images/children/02-26 Mercedes Almonds-017-13.jpg" className={ utilStyles.carouselImages}/>
+                    <img src="/images/couples/DSC08427.jpg" className={ utilStyles.carouselImages}/>
+                    <img src="/images/portraits/DSC00593.jpg" className={ utilStyles.carouselImages}/>
+                    <img src="/images/portraits/DSC07946.jpg" className={ utilStyles.carouselImages}/>
+                    <img src="/images/couples/untitled-14.jpg" className={ utilStyles.carouselImages}/>
+                    <img src="/images/children/DSC01627.jpg" className={ utilStyles.carouselImages}/>
+                </Rerousel>
             </section>
 
             <section>
@@ -94,14 +85,16 @@ export default function Services() {
                 </div>
             </section>
 
-            <section className={` ${utilStyles.container} ${ utilStyles.parallax } `} style={{ backgroundImage: "url('images/scenes/DSC02382.jpg')", width:'100vw', minHeight: '400px', textAlign: 'center', boxShadow: "inset 0 0 0 1000px #ffffffa8" }}>
+            <section className={` ${utilStyles.container} ${ utilStyles.parallax } `} style={{ backgroundImage: "url('images/scenes/DSC02382.jpg')", minHeight: '400px' }}>
 
-                <div style={{ width: "100%", position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%", maxWidth: "900px", padding: "20px" }} className="text-center">
+                <div className={ utilStyles.parallaxText }>
+
                     <h2>Investment</h2>
                     <h3>There's so much more to photography than the click of a shutter</h3>
                     <p className="block">
                         I’ve spent years working hard on my craft, investing in gear, and education. Your investment reflects the value of the skills I’ve acquired and the services I provide. I go the extra mile diving deep into your story making sure we capture your unique legacy. Exactly as you remember it. 
                     </p>
+                    
                 </div>
             
             </section>

@@ -31,8 +31,7 @@ export default function About() {
                 </div>
             </section>
 
-            <section className={` ${utilStyles.container} ${ utilStyles.parallax } `} style={{ backgroundImage: "url('images/families/DSC01518-cropped.jpg')", width:'100vw', minHeight: '500px'}}>
-                <div style={{ height: 600, background: "#ffffff98" }}/>
+            <section className={` ${utilStyles.container} ${ utilStyles.parallax } `} style={{ backgroundImage: "url('images/families/DSC01518-cropped.jpg')", minHeight: '500px'}}>
             </section>
 
             <section>

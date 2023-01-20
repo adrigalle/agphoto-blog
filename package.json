@@ -19,6 +19,7 @@
     "react-multi-carousel": "^2.8.2",
     "react-parallax": "^3.5.1",
     "remark": "^14.0.2",
-    "remark-html": "^15.0.1"
+    "remark-html": "^15.0.1",
+    "rerousel": "^0.1.9"
   }
 }

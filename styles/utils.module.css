@@ -116,15 +116,43 @@
 .parallax {
   overflow: hidden; 
   position: relative;
+  width: 100vw;
   background-attachment: fixed;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   -moz-background-size: cover; 
   -webkit-background-size: cover; 
+  text-align: center;
+  box-shadow: inset 0 0 0 1000px #ffffffaf;
 }
 @media (max-device-width: 1366px) {
   .parallax {
     background-attachment: scroll;
+  }
+}
+.parallaxText {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  max-width: 900px;
+}
+
+.carouselImages {
+  height: 300px;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+}
+@media(max-width: 1150px) {
+  .carouselImages {
+    width: auto;
+    height: 300px;
   }
 }
