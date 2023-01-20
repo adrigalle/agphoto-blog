@@ -6,7 +6,6 @@ import Layout, { siteTitle } from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
 import Date from '../components/date';
 import Accordion from 'react-bootstrap/Accordion';
-import Container from 'react-bootstrap/Container';
 
 
 function AccordionCard(props) {

@@ -8,32 +8,9 @@ import utilStyles from '../styles/utils.module.css';
 import { getSortedPostsData } from '../lib/posts'; // gets the posts sorted by data from the lib folder
 import Date from '../components/date';
 import Button from 'react-bootstrap/Button';
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
+
 import TestimonialCards from '../components/testimonials';
 
-const responsive = {
-  desktop: {
-    breakpoint: { max: 3000, min: 1450 },
-    items: 5,
-    partialVisibilityGutter: 20
-  },
-  other: {
-    breakpoint: { max: 1450, min: 800 },
-    items: 3,
-    partialVisibilityGutter: 10
-  },
-  tablet: {
-    breakpoint: { max: 800, min: 598 },
-    items: 2,
-    partialVisibilityGutter: 50
-  },
-  mobile: {
-    breakpoint: { max: 598, min: 0 },
-    items: 1,
-    partialVisibilityGutter: 100
-  }
-};
 
 
 export async function getStaticProps() { // this is only for static props that are only needed at build time
@@ -101,60 +78,39 @@ export default function Home() {
             <h2><br/>Testimonials</h2>
             <h3>here's what a couple of families had to say about their photos and the experience!</h3>
 
-            <div>
-              <Carousel
-                  swipeable={true}
-                  draggable={false}
-                  showDots={false}
-                  partialVisible={true}
-                  responsive={responsive}
-                  ssr={true} // means to render carousel on server-side.
-                  infinite={true}
-                  autoPlay={false}
-                  keyBoardControl={true}
-                  customTransition="all .5"
-                  transitionDuration={500}
-                  containerClass="carousel-container"
-                  removeArrowOnDeviceType={["tablet", "mobile"]}
-                  dotListClass="custom-dot-list-style"
-                  itemClass="carousel-item-padding-40-px"
-                  className={ styles.testimonials }
-              >
-
-                <TestimonialCards
-                  name= "The Morales Family"
-                  topimage= "images/children/DSC09906-Edit.jpg"
-                  review= "My girls are beautiful but the patience and dedication she has and the way she works her magic when taking pictures is awesome💜💛❤ Thank you so much Adriana Gallegos!!" />
-                <TestimonialCards
-                  name= "The Romero Family"
-                  topimage= "images/families/DSC09434.jpg"
-                  review= "Thank you so much!! We love them all!" />
-                <TestimonialCards 
-                  name= "The Moreno Family"
-                  topimage= "images/families/DSC09301.jpg"
-                  review= "Thank you so much they all look so cute (emoji) even though they were just all over the place" />
-                <TestimonialCards
-                  name= "Angela"
-                  topimage= "images/portraits/DSC6735.jpg"
-                  review= "Loved having her take pictures of me!!! She was so kind and friendly and made me feel super comfortable. She gave me ideas on how to pose and what poses or faces looked better on me so I had no bad angles!!! Would def recommend to anyone" />
-                <TestimonialCards
-                  name= "The Contreras Family"
-                  topimage= "images/children/DSC00800.jpg"
-                  review= "Your amazing they came out so dang cute" />
-                <TestimonialCards
-                  name= "The Chalaph Family"
-                  topimage= "images/families/DSC01482.jpg"
-                  review= "I LOVE LOVE then! Thank you so much!!" />
-                <TestimonialCards
-                  name= "The Cambreros Family"
-                  topimage= "images/families/02-26 Celina Almonds-015.jpg"
-                  review= "It’s so hard for me to get good pictures of all my three girls together so I was very excited to see she was able to capture them all together!  Would strongly recommend." />
-                <TestimonialCards
-                  name= "The Segoviano Family"
-                  topimage= "images/children/DSC04319.jpg"
-                  review= "I am in love with how they came out! We have gotten so many comments on the pictures and have definitely been referring all who ask! Thank you again!" />
-                
-              </Carousel>
+            <div className='scrolling-wrapper carousel'>
+              <TestimonialCards
+                name= "The Morales Family"
+                topimage= "images/children/DSC09906-Edit.jpg"
+                review= "My girls are beautiful but the patience and dedication she has and the way she works her magic when taking pictures is awesome💜💛❤ Thank you so much Adriana Gallegos!!" />
+              <TestimonialCards
+                name= "The Romero Family"
+                topimage= "images/families/DSC09434.jpg"
+                review= "Thank you so much!! We love them all!" />
+              <TestimonialCards 
+                name= "The Moreno Family"
+                topimage= "images/families/DSC09301.jpg"
+                review= "Thank you so much they all look so cute (emoji) even though they were just all over the place" />
+              <TestimonialCards
+                name= "Angela"
+                topimage= "images/portraits/DSC6735.jpg"
+                review= "Loved having her take pictures of me!!! She was so kind and friendly and made me feel super comfortable. She gave me ideas on how to pose and what poses or faces looked better on me so I had no bad angles!!! Would def recommend to anyone" />
+              <TestimonialCards
+                name= "The Contreras Family"
+                topimage= "images/children/DSC00800.jpg"
+                review= "Your amazing they came out so dang cute" />
+              <TestimonialCards
+                name= "The Chalaph Family"
+                topimage= "images/families/DSC01482.jpg"
+                review= "I LOVE LOVE then! Thank you so much!!" />
+              <TestimonialCards
+                name= "The Cambreros Family"
+                topimage= "images/families/02-26 Celina Almonds-015.jpg"
+                review= "It’s so hard for me to get good pictures of all my three girls together so I was very excited to see she was able to capture them all together!  Would strongly recommend." />
+              <TestimonialCards
+                name= "The Segoviano Family"
+                topimage= "images/children/DSC04319.jpg"
+                review= "I am in love with how they came out! We have gotten so many comments on the pictures and have definitely been referring all who ask! Thank you again!" />
             </div>
 
           </div>

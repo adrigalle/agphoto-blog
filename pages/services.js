@@ -46,7 +46,7 @@ export default function Services() {
         "/images/couples/untitled-14.jpg",
         "/images/children/DSC01627.jpg"
       ];
-      const imgCarousel = useRef(null);
+    const imgCarousel = useRef(null);
 
     return ( 
         <Layout services>

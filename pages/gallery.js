@@ -5,7 +5,6 @@ import Image from 'next/image'; // extension of the html <img> tag that resizes,
 import Layout, { siteTitle } from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
 import Date from '../components/date';
-import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 

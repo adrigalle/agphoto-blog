@@ -114,3 +114,35 @@ section {
 .text-center{
   text-align: center;
 }
+
+
+
+/* ********* carousel *********** */
+.scrolling-wrapper{
+	overflow-x: auto;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.carousel {
+  scrollbar-color: #AA6262 transparent;
+}
+
+.carousel::-webkit-scrollbar {
+  height: 10px;
+}
+
+.carousel::-webkit-scrollbar-track {
+  background: rgb(233, 233, 233);
+  padding: 0;
+  margin: 0 10vw;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+  background-color: #e5bcac;
+  border: 0 solid gainsboro;
+}
