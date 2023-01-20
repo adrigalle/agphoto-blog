@@ -8,27 +8,33 @@ import utilStyles from '../styles/utils.module.css';
 import { getSortedPostsData } from '../lib/posts'; // gets the posts sorted by data from the lib folder
 import Date from '../components/date';
 import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
+
 import Container from 'react-bootstrap/Container';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { Parallax } from 'react-parallax';
+import TestimonialCards from '../components/testimonials';
 
 const responsive = {
   desktop: {
-    breakpoint: { max: 3000, min: 1024 },
+    breakpoint: { max: 3000, min: 1450 },
     items: 5,
     partialVisibilityGutter: 40
   },
   tablet: {
-    breakpoint: { max: 1024, min: 464 },
+    breakpoint: { max: 1450, min: 800 },
     items: 3,
-    partialVisibilityGutter: 30
+    partialVisibilityGutter: 10
+  },
+  other: {
+    breakpoint: { max: 800, min: 598 },
+    items: 2,
+    partialVisibilityGutter: 50
   },
   mobile: {
-    breakpoint: { max: 464, min: 0 },
+    breakpoint: { max: 598, min: 0 },
     items: 1,
-    partialVisibilityGutter: 30
+    partialVisibilityGutter: 100
   }
 };
 
@@ -42,25 +48,29 @@ export async function getStaticProps() { // this is only for static props that a
   };
 } // this returns allPostsData in side the prop
 
-function TestimonialCards(props) {
-  return (
-    <div className="col-7">
-      <Card style={{ width: '300px' }}>
-        <Card.Img variant="top" src={props.topimage} alt={props.name}/>
-          <Card.Body>
-            <Card.Text>{props.review}</Card.Text>
-            <Card.Footer>
-              <small className="text-muted">
-                  - {props.name}
-              </small>
-            </Card.Footer>
-          </Card.Body>
-      </Card>
-    </div>
-  )
-}
+// function TestimonialCards(props) {
+//   return (
+//     <div className={ styles.testimonial }>
+//       <Card className={ styles.card }>
+//         <Card.Img variant="top" src={props.topimage} alt={props.name}/>
+//           <Card.Body>
+//             <Card.Text style={{ fontSize: '.75rem' }}>{props.review}</Card.Text>
+//             <Card.Footer className={ styles.cardFooter }>
+//               <small className="text-muted">
+//                   - {props.name}
+//               </small>
+//             </Card.Footer>
+//           </Card.Body>
+//       </Card>
+//     </div>
+//   )
+// }
+
+
 //<img src="/images/my-family/DSC00334-Edit.jpg" />
 // the { allPostsData } prop allows Hom eto acces the blog posts
+
+
 export default function Home() {
 
   return (
@@ -70,7 +80,7 @@ export default function Home() {
         <title>{siteTitle}</title>
       </Head> 
 
-      <section styles={ utilStyles.container }>
+      <section className={ utilStyles.container }>
             <Parallax bgImage="/images/my-family/DSC00334-Edit.jpg" strength={500} blur={{ min: -1, max: 3 }} bgImageStyle={{ width: "100vw", height: "auto"}}>
                 <div style={{ height: 600 }}>
                   <div style={{background: "#ffffff7a", backdropFilter: "blur(5px)", padding: "20px", position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)"}} className="text-center">
@@ -83,10 +93,10 @@ export default function Home() {
         </section>
     
     
-        <Container fluid='sm'>
-            <div className="block">
-                <div className="flex-row-container">
-                    <div styles={ utilStyles.insideStyles }>
+        <section >
+            <div className={ utilStyles.block }>
+                <div className={ utilStyles.row }>
+                    <div>
                         <h2>Welcome to my page!</h2>
                         <p>
                             Like having beautiful background sceneries that fuel you and your kids' energy? Well you are in luck! I am a natural light photographer that edits in a light and vibrant style. <br/>
@@ -99,9 +109,9 @@ export default function Home() {
                     <img src="images/my-family/DSC02653.jpg" width={200}/>
                 </div>
             </div>
-        </Container>
+        </section>
     
-        <section styles={ utilStyles.container }>
+        <section className={ utilStyles.container }>
             <Parallax bgImage="/images/scenes/DSC02443.jpg" strength={500} blur={3} bgImageStyle={{ width: "100vw", height: "auto"}}>
               <div style={{ height: 200, background: "#ffffff98" }}>
                 <div style={{ width: "100%", position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%" }} className="text-center">
@@ -113,12 +123,13 @@ export default function Home() {
         </section>
     
 
-        <section styles={ utilStyles.container }>
-            <Container fluid>
+        <section>
+            <div className={ utilStyles.container }>
 
-                <h2><br/>Testimonials</h2>
-                <h3>here's what a couple of families had to say about their photos and the experience!</h3>
+              <h2><br/>Testimonials</h2>
+              <h3>here's what a couple of families had to say about their photos and the experience!</h3>
 
+              <div>
                 <Carousel
                     swipeable={true}
                     draggable={false}
@@ -135,6 +146,7 @@ export default function Home() {
                     removeArrowOnDeviceType={["tablet", "mobile"]}
                     dotListClass="custom-dot-list-style"
                     itemClass="carousel-item-padding-40-px"
+                    className={ styles.testimonials }
                 >
 
                   <TestimonialCards
@@ -171,16 +183,17 @@ export default function Home() {
                     review= "I am in love with how they came out! We have gotten so many comments on the pictures and have definitely been referring all who ask! Thank you again!" />
                   
                 </Carousel>
+              </div>
 
-            </Container>
+            </div>
         </section>
 
-        <Container fluid='sm'>
+        <div className={ utilStyles.container }>
             <div className="block text-center">
                 <h3>experience a session for yourself!</h3>
-                <a href="#/contact"><button>Contact me</button></a>
+                <a href="/contact"><button>Contact me</button></a>
             </div>
-        </Container>
+        </div>
 
 
     </Layout>

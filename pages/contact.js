@@ -16,10 +16,12 @@ export default function Contact() {
         <Layout services>
 
             <Head>
-                <title>{siteTitle}</title>
+                <title>Contact | {siteTitle}</title>
             </Head>
 
             <div style={{ backgroundImage: 'url(/images/scenes/DSC09798.jpg)', backgroundRepeat: "no-repeat", backgroundSize: "cover", width: "100vw", backgroundAttachment: "fixed"  }}>
+
+
                 <div style={{ background: "#ffffff98", padding: 20 }}>
                   <div style={{background: "#ffffff7a", backdropFilter: "blur(5px)", padding: "20px", minWidth: "380px", width: "45vw", textAlign: "center", margin: "auto" }} className="text-center justify-content-center">
 
@@ -32,28 +34,28 @@ export default function Contact() {
 
                         <p>Feel free to shoot me an email, message me through social media, shoot me a text, or use the contact form below!</p>
                         <p>I don't recommend calls because I will forget everything so I recommend some form of written message</p>
-
                         <br/>
+                        
                     </div>
 
                     <Row>
                         <Col><h3>email:</h3></Col>
-                        <Col><a href="mailto:ag.photography.etc@gmail.com" target="_blank"><p>ag.photography.etc@gmail.com</p></a></Col>
+                        <Col><a href="mailto:ag.photography.etc@gmail.com" target="_blank" className={ utilStyles.emailPhone }><p>ag.photography.etc@gmail.com</p></a></Col>
                     </Row>
 
                     <Row>
                     <Col><h3>phone:</h3></Col>
-                    <Col><a href="tel:1-907-978-8659"><p >907.978.8659</p></a></Col>
+                    <Col><a href="tel:1-907-978-8659" className={ utilStyles.emailPhone }><p >907.978.8659</p></a></Col>
                     </Row>
 
                     <Row>
                     <Col><h3>intagram:</h3></Col>
-                    <Col><a href="https://www.instagram.com/ag.photography.etc/" target="_blank"><p>@ag.photography.etc</p></a></Col>
+                    <Col><a href="https://www.instagram.com/ag.photography.etc/" target="_blank" className={ utilStyles.emailPhone }><p>@ag.photography.etc</p></a></Col>
                     </Row>
 
                     <Row>
                     <Col><h3>facebook:</h3></Col>
-                    <Col><a href="https://www.facebook.com/ag.photography.etc/" target="_blank"><p>@ag.photography.etc</p></a></Col>
+                    <Col><a href="https://www.facebook.com/ag.photography.etc/" target="_blank" className={ utilStyles.emailPhone }><p>@ag.photography.etc</p></a></Col>
                     </Row>
 
                     <br/>

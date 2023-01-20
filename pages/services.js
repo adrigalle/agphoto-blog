@@ -49,35 +49,39 @@ export default function Services() {
         <Layout services>
 
             <Head>
-                <title>{siteTitle}</title>
+                <title>Services | {siteTitle}</title>
             </Head>
 
-            <Carousel
-                swipeable={true}
-                draggable={false}
-                showDots={true}
-                partialVisible={true}
-                responsive={responsive}
-                ssr={true} // means to render carousel on server-side.
-                infinite={true}
-                autoPlay={true}
-                autoPlaySpeed={3000}
-                keyBoardControl={true}
-                customTransition="all .5"
-                transitionDuration={500}
-                containerClass="carousel-container"
-                removeArrowOnDeviceType={["tablet", "mobile"]}
-                dotListClass="custom-dot-list-style"
-                itemClass="image-item"
-            >
-                {carouselImages.map((image, index) => (
-                    <div key={index} style={{ alignContent: 'center' }}><img src={image}/></div>
-                ))}
+            <section>
+                <div className={ utilStyles.container }>
+                <Carousel
+                    swipeable={true}
+                    draggable={false}
+                    showDots={true}
+                    partialVisible={true}
+                    responsive={responsive}
+                    ssr={true} // means to render carousel on server-side.
+                    infinite={true}
+                    autoPlay={true}
+                    autoPlaySpeed={3000}
+                    keyBoardControl={true}
+                    customTransition="all .5"
+                    transitionDuration={500}
+                    containerClass="carousel-container"
+                    removeArrowOnDeviceType={["tablet", "mobile"]}
+                    dotListClass="custom-dot-list-style"
+                    itemClass="image-item"
+                >
+                    {carouselImages.map((image, index) => (
+                        <div key={index}><img src={image}/></div>
+                    ))}
 
-            </Carousel>
+                </Carousel>
+                </div>
+            </section>
 
             <section>
-                <Container fluid='sm'>
+                <div className={ utilStyles.block }>
                     <h3>Just look at your family, how they are growing, how their little personalities are morphing </h3>
                     <br/>
                     <p>
@@ -87,10 +91,10 @@ export default function Services() {
                     </p>
                     <br/>
                     <h4>SO LET'S CREATE THEM NOW, AND MAKE SURE YOU ARE ON THE RIGHT SIDE OF THE CAMERA</h4>
-                </Container>
+                </div>
             </section>
 
-            <section styles={ utilStyles.container }>
+            <section className={ utilStyles.container }>
                 <Parallax bgImage="/images/scenes/DSC02382.jpg" strength={10} blur={{ min: -1, max: 3 }} >
                     <div style={{ height: 400, background: "#ffffffa8" }} className="text-center align-items-center">
                         <div style={{ padding: "20px", position: "absolute", maxWidth: "900px", minWidth:"350px", position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%" }} className="text-center align-items-center">
@@ -105,18 +109,18 @@ export default function Services() {
             </section>
 
             <section>
-                <Container fluid='sm'>
+                <div className={ utilStyles.block }>
                     <p>I will do everything I can to make any experience with me as comfortable, enjoyable, and as fun as possible of course, but most of us are not in front of a camera (at least not with a photographer) everyday so usually the first 20 minutes, no matter what, will be awkward! 
                     <br/><br/>
                     It is totally normal to be awkward and it helps to have that extra time to build up that confidence. 
                     All of the packages require a $60 retainer and can be paid through the booking site, Cash, Venmo, or Zelle. These are the available packages:
                     </p>
-                </Container>
+                </div>
             </section>
 
 
             <section>
-                <Container>
+                <div className={ utilStyles.container }>
                     <div className="card-group mx-auto">
                         <div className="card mx-auto">
                             <img className="card-img-top" src="images/families/02-26 Celina Almonds-015-9.jpg" alt="Card image cap"/>
@@ -178,18 +182,18 @@ export default function Services() {
                             </div>
                         </div>
                     </div>
-                </Container>
+                </div>
             </section>
 
             <br/><br/>
 
             <section>
-                <Container className="text-center" fluid='sm'>
+                <div className={ utilStyles.block }>
                     <p>
                         If you don't see something you are interested in, please don't hesitate to give me a contact me and we'll see what we can do!
                     </p>
                     <a href="/contact"><button>Contact me</button></a>
-                </Container>
+                </div>
             </section>
 
         </Layout>

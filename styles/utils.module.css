@@ -4,7 +4,7 @@
   font-weight: 800;
   letter-spacing: -0.05rem;
   margin: 1rem 0;
-}
+} 
 
 .headingXl {
   font-size: 2rem;
@@ -50,13 +50,47 @@
 .lightText {
   color: #666;
 }
+
+
+
+
+
+
+
+
+
+
+
 .container {
   width: 100vw;
   padding: 0 0;
   margin: 0 0;
 }
+
+.block {
+    padding: 60px; 
+    max-width: 900px; 
+    width: 95vw;
+    margin:0 auto; 
+    text-align:justify;
+}
+.row {
+  display: flex; 
+  flex-direction: row; 
+  gap: 20px;
+  justify-content: space-between;
+}
 .blur {
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   background-color: #ffffffa8;
+}
+
+
+.emailPhone {
+  text-decoration: none;
+  color: #787878;
+}
+.emailPhone:hover {
+  color: #e5bcac;
 }

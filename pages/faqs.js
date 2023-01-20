@@ -11,7 +11,7 @@ import Container from 'react-bootstrap/Container';
 
 function AccordionCard(props) {
     return (
-        <Accordion.Item eventKey={props.id}>
+        <Accordion.Item style={{ color: '#787878' }} eventKey={props.id}>
             <Accordion.Header>{props.question}</Accordion.Header>
             <Accordion.Body>{props.answer}</Accordion.Body>
         </Accordion.Item>
@@ -26,13 +26,13 @@ export default function FAQs() {
                 <title>{siteTitle}</title>
             </Head>
 
-            <Container>
+            <div className={ utilStyles.block }>
                 <br/>
                 <h2>Here are some frequently asked questions</h2>
-            </Container>
+            </div>
 
             <section>
-                <Container>
+                <div className={ utilStyles.block }>
 
                     <Accordion defaultActiveKey="0" flush>
 
@@ -71,18 +71,18 @@ export default function FAQs() {
 
                     </Accordion>
 
-                </Container>
+                </div>
             </section>
 
 
             <section>
-                <Container className="text-center">
+                <div className={ utilStyles.block }>
                     <h3>If your question wasn't answered, please don't hesitate to shoot me a message!</h3>
                     <br/>
                     <a href="/contact">
                         <button>Let's chat!</button>
                     </a>
-                </Container>
+                </div>
             </section>
 
         </Layout>

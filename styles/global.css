@@ -73,7 +73,7 @@ h3 {
 h4 {
   text-transform: uppercase !important;
   color: #C89687;
-  font-size: 18px;
+  font-size: 18px !important;
   font-weight: normal;
 }
 
@@ -93,3 +93,22 @@ section {
   backdrop-filter: blur(5px);
 }
 
+.accordion-button {
+  color: #787878 !important;
+}
+.accordion-button:hover {
+  color: #ead6b8 !important;
+}
+.accordion-button:not(.collapsed) {
+  color: #787878 !important;
+  background-color: #e5bcac !important;
+}
+.accordion-button:focus {
+  z-index: 3;
+  border-color: #aea787 !important;
+  outline: 0;
+  box-shadow: none !important;
+}
+.text-center{
+  text-align: center;
+}

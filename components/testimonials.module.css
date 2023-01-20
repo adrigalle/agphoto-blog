@@ -1,0 +1,28 @@
+/* *********** TESTIMONIALS ***************** */
+.testimonials {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 0 2px;
+    min-width: 250px;
+  }
+  
+  .testimonial {
+    align-items: center;
+  }
+  
+  .card {
+    display: flex;
+    border: none;
+    padding: 0;
+    border-radius: none;
+    max-width: 287px;
+    min-width: 250px;
+    box-shadow: rgba(150, 150, 150, 0.25) 0px 0.0625em 0.0625em, rgba(133, 133, 133, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  }
+  .cardFooter {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    color: #787878;
+  }

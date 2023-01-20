@@ -4,50 +4,68 @@
     color: white;
     overflow: hidden;
     background: #b39082c7;
-    padding-top:50px;
 }
-
-.insta-content {
-    position: absolute; 
-    top: 300px; 
-    left: 0; 
-    width: 100%; 
+.instagramImg {
+    width: 100vw;
+    height: auto;
+    opacity: 0.5;
 }
-.insta-content h4 {
+@media (max-width: 680px) {
+    .instagramImg{
+        width: auto;
+        height: 100px;
+    }
+}
+.instaContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.instaContentHead {
     font-size: 2vw;
     letter-spacing: 0.1em;
     margin: 0;
     backdrop-filter: blur(5px); /* adds blur to everything behind it */
     -webkit-backdrop-filter: blur(5px);
-    font-family: 'Comfortaa', cursive; 
     padding: 8px;
 }
-.insta-content span {
+.instaContentSpan {
     color: white; 
-    font: bold 24px/45px Helvetica, Sans-Serif; 
+    font: bold 24px/45px; 
     letter-spacing: -1px;  
-    background: rgb(0, 0, 0); /* fallback color */
-    background: rgba(0, 0, 0, 0.4);
     padding: 10px; 
+    border: 2px solid white;
+    padding: 10px 14px 6px;
+    display: inline-block;
 }
-.bgWrap {
+
+
+
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     position: relative;
-    text-align: center;
-    width: 100vw;
-    overflow: hidden;
-    z-index: -1;
-    padding: 0;
+    align-items: center;
+    margin: auto;
+    gap: 50px;
+    margin-top: 20px;
 }
-.bgText {
-    margin: 0;
-    font-size: 2rem;
-    line-height: 3rem;
+.bottom > *{
+    flex: 1 1 0;
+}
+.bottomCol{
+    max-width: 350px;
+    min-width: 200px;
     text-align: center;
-    padding-top: 40vh;
-    text-shadow: 1px 1px 1px #3c5c5e;
 }
 
-
+.emailPhone {
+    text-decoration: none;
+    color: #787878;
+}
 
 
 .footerList {
@@ -58,7 +76,6 @@
     padding: 0;
     gap: 15px;
     flex-wrap: wrap;
-
 }
 .listItem a {
     text-decoration: none;

@@ -4,8 +4,6 @@ import Link from 'next/link'; // this allows for changing pages without a full r
 import Image from 'next/image'; // extension of the html <img> tag that resizes, optimizes, and lazy loads images
 import Layout, { siteTitle } from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
-import Date from '../components/date';
-import Container from 'react-bootstrap/Container';
 import { Parallax } from 'react-parallax';
 
 export default function About() {
@@ -13,13 +11,13 @@ export default function About() {
         <Layout about>
 
             <Head>
-                <title>{siteTitle}</title>
+                <title>About | {siteTitle}</title>
             </Head>
  
             <section>
-                <Container fluid='sm'>
-                    <div className="flex-row-container">
-                        <img src="images/children/DSC03631.jpg" width={100}/>
+                <div className={ utilStyles.block }>
+                    <div className={ utilStyles.row }>
+                        <Image src="/images/children/DSC03631.jpg" width={100} height={300}/>
                         <div>
                             <h2>You're tired of watching it all fly by</h2>
                             <h3>and you want time to just hold up and stand still</h3>
@@ -31,17 +29,17 @@ export default function About() {
                             <h3>That’s exactly where I come in.</h3>
                         </div>
                     </div>
-                </Container>
+                </div>
             </section>
 
-            <section styles={ utilStyles.container }>
+            <section className={ utilStyles.container }>
                 <Parallax bgImage="/images/families/DSC01518-cropped.jpg" strength={500} blur={{ min: -1, max: 3 }} bgImageStyle={{ width: "100vw", height: "auto"}}>
                     <div style={{ height: 600, background: "#ffffff98" }}></div>
                 </Parallax>     
             </section>
 
             <section>
-                <Container fluid='sm'>
+                <div className={ utilStyles.block }>
                     <p>
                         I’m Adriana, and I love freezing time for the smiles and that love for those who never want to forget these years that speed by so fast. For those busy mommas that want memories they can look back on and remember all the beauty of it!
                         <br/><br/>
@@ -49,11 +47,11 @@ export default function About() {
                         <br/><br/>
                         Having someone else clicking away while you interact with your family is such a different experience that I can provide you. We can do longer sessions to give you a crazy variety of pictures to choose from, or a much shorter session for those with a time budget.
                     </p>
-                </Container>
+                </div>
             </section>
 
             <section>
-                <Container fluid='sm'>
+                <div className={ utilStyles.block }>
                     <div className="flex-row-container">
                         <div>
                             <h4>WHO IS BEHIND THE LENS?</h4>
@@ -67,29 +65,32 @@ export default function About() {
 
                         <img src="images/my-family/DSC05842.jpg"/>
                     </div>
-                </Container>
+                </div>
             </section>
 
             <section>
-                <Container fluid='sm'>
+                <div className={ utilStyles.block }>
                     <p> 
                         I am also a Full Stack Development online student through Emeritus at MITxPro, and someday my husband and I, with the precious one of course, hope to travel all over the place! I have watched Supernatural like 10 times now, The Office about 7 times, and Encanto like twice a day since it became available on Disney+ (not just because Artemis likes it). 
                         <br/><br/>
                         Also totally random, but I get asked a lot about my glasses, I got them at <a href="https://www.zeelool.com/" title="zeelool.com">zeelool.com</a> (I do not get any kind of commission from this link, though it would be cool). The design is called Cicely, sometimes they have DEEP discounts, so if you are interested, be on the look out for that 
                     </p>
-                </Container>
+                </div>
             </section>
 
             <section>
-                <Container className="text-center" fluid='sm'>
+                <div className={ utilStyles.block }>
                     <h4>
                         ANYWAY, THANK YOU SO MUCH FOR TAKING THE TIME IN GETTING TO KNOW ME, AND NOW IT MY TURN TO GET TO KNOW YOU! SHOOT ME A MESSAGE AND LET'S GET YOU ON THE RIGHT SIDE OF THE CAMERA!
                     </h4>
                     <br/>
-                    <a href="/contact">
-                        <button>Let's Chat!</button>
-                    </a>
-                </Container>
+                    <div  className='text-center'>
+                        <a href="/contact">
+                            <button>Let's Chat!</button>
+                        </a>
+                    </div>
+                    
+                </div>
             </section>
 
         </Layout>

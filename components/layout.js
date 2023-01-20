@@ -11,7 +11,7 @@ import { Comfortaa } from '@next/font/google';
 const comfortaa = Comfortaa({ subsets: ['latin'] });
  
 const name = 'Adriana Gallegos';
-export const siteTitle = 'Next.js Sample Website';
+export const siteTitle = 'AG Photography etc';
 
 export default function Layout({ children, home }) {
   return (
@@ -32,6 +32,9 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
       </Head>
 
+
+
+
       <Header />
       <NavBar />
       <Top />
@@ -39,6 +42,11 @@ export default function Layout({ children, home }) {
       <main className={`${utilStyles.container} ${comfortaa.className}`}>{children}</main>
 
       <Footer />
+
+
+
+
+
     </div>
   );
 }
