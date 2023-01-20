@@ -23,46 +23,46 @@ export default function Gallery() {
             <section>
                 <div className={ utilStyles.container}>
 
-                    <Row lg={4} md={2} xs={1} style={{ gap: 0 }}>
+                    <Row lg={4} md={2} xs={1} style={{ width:'100vw', margin: 0, textAlign: 'center' }}>
 
-                        <Col style={{ padding: 0 }}>
-                            <img src="/images/children/DSC00800.jpg"/>
-                            <img src="/images/children/03-20 Viri Unicorn-020-12.jpg"/>
-                            <img src="/images/children/DSC03007.jpg"/>
-                            <img src="/images/children/DSC03693.jpg"/>
-                            <img src="/images/children/DSC04319.jpg"/>
-                            <img src="/images/children/untitled-22.jpg"/>
-                            <img src="/images/children/DSC6882.jpg"/>
+                        <Col className={ utilStyles.imgCols } style={{ padding: 0}}>
+                            <Image width={480} height={720} className={ utilStyles.galleryImg } src="/images/children/DSC00800.jpg"/>
+                            <Image width={480} height={720} className={ utilStyles.galleryImg } src="/images/children/03-20 Viri Unicorn-020-12.jpg"/>
+                            <Image width={480} height={720} className={ utilStyles.galleryImg } src="/images/children/DSC03007.jpg"/>
+                            <Image width={480} height={720} className={ utilStyles.galleryImg } src="/images/children/DSC03693.jpg"/>
+                            <Image width={480} height={720} className={ utilStyles.galleryImg } src="/images/children/DSC04319.jpg"/>
+                            <Image width={480} height={720} className={ utilStyles.galleryImg } src="/images/children/untitled-22.jpg"/>
+                            <Image width={480} height={720} className={ utilStyles.galleryImg } src="/images/children/DSC6882.jpg"/>
                         </Col>
 
-                        <Col style={{ padding: 0 }}>
-                            <img src="/images/couples/DSC08513.jpg"/>
-                            <img src="/images/couples/DSC07641.jpg"/>
-                            <img src="/images/couples/DSC09861.jpg"/>
-                            <img src="/images/couples/untitled-14.jpg"/>
-                            <img src="/images/couples/AyarzaFamily-4.jpg"/>
-                            <img src="/images/couples/DSC05679.jpg"/>
-                            <img src="/images/couples/DSC04138.jpg"/>
+                        <Col className={ utilStyles.imgCols } style={{ padding: 0 }}>
+                            <Image width={480} height={720} className={ utilStyles.galleryImg } src="/images/couples/DSC08513.jpg"/>
+                            <Image width={480} height={720} className={ utilStyles.galleryImg } src="/images/couples/DSC07641.jpg"/>
+                            <Image width={480} height={720} className={ utilStyles.galleryImg } src="/images/couples/DSC09861.jpg"/>
+                            <Image width={480} height={720} className={ utilStyles.galleryImg } src="/images/couples/untitled-14.jpg"/>
+                            <Image width={480} height={720} className={ utilStyles.galleryImg } src="/images/couples/AyarzaFamily-4.jpg"/>
+                            <Image width={480} height={720} className={ utilStyles.galleryImg } src="/images/couples/DSC05679.jpg"/>
+                            <Image width={480} height={720} className={ utilStyles.galleryImg } src="/images/couples/DSC04138.jpg"/>
                         </Col>
 
-                        <Col style={{ padding: 0 }}>
-                            <img src="/images/families/DSC01616.jpg"/>
-                            <img src="/images/families/DSC01467-Edit.jpg"/>
-                            <img src="/images/families/DSC03730.jpg"/>
-                            <img src="/images/families/DSC00959.jpg"/>
-                            <img src="/images/families/02-26 Mercedes Almonds-017-16.jpg"/>
-                            <img src="/images/families/AyarzaFamily-13.jpg"/>
-                            <img src="/images/families/DSC01782-Edit.jpg"/>
+                        <Col className={ utilStyles.imgCols } style={{ padding: 0 }}>
+                            <Image width={480} height={720} className={ utilStyles.galleryImg } src="/images/families/DSC01616.jpg"/>
+                            <Image width={480} height={720} className={ utilStyles.galleryImg } src="/images/families/DSC01467-Edit.jpg"/>
+                            <Image width={480} height={720} className={ utilStyles.galleryImg } src="/images/families/DSC03730.jpg"/>
+                            <Image width={480} height={720} className={ utilStyles.galleryImg } src="/images/families/DSC00959.jpg"/>
+                            <Image width={480} height={720} className={ utilStyles.galleryImg } src="/images/families/02-26 Mercedes Almonds-017-16.jpg"/>
+                            <Image width={480} height={720} className={ utilStyles.galleryImg } src="/images/families/AyarzaFamily-13.jpg"/>
+                            <Image width={480} height={720} className={ utilStyles.galleryImg } src="/images/families/DSC01782-Edit.jpg"/>
                         </Col>
 
-                        <Col style={{ padding: 0 }}>
-                            <img src="/images/portraits/DSC07946.jpg"/>
-                            <img src="/images/portraits/DSC00506.jpg"/>
-                            <img src="/images/portraits/AyarzaFamily-19.jpg"/>
-                            <img src="/images/portraits/DSC02275.jpg"/>
-                            <img src="/images/portraits/DSC01193.jpg"/>
-                            <img src="/images/portraits/03-20 Viri Unicorn-020-8.jpg"/>
-                            <img src="/images/portraits/DSC6654.jpg"/>
+                        <Col className={ utilStyles.imgCols } style={{ padding: 0 }}>
+                            <Image width={480} height={720} className={ utilStyles.galleryImg } src="/images/portraits/DSC07946.jpg"/>
+                            <Image width={480} height={720} className={ utilStyles.galleryImg } src="/images/portraits/DSC00506.jpg"/>
+                            <Image width={480} height={720} className={ utilStyles.galleryImg } src="/images/portraits/AyarzaFamily-19.jpg"/>
+                            <Image width={480} height={720} className={ utilStyles.galleryImg } src="/images/portraits/DSC02275.jpg"/>
+                            <Image width={480} height={720} className={ utilStyles.galleryImg } src="/images/portraits/DSC01193.jpg"/>
+                            <Image width={480} height={720} className={ utilStyles.galleryImg } src="/images/portraits/03-20 Viri Unicorn-020-8.jpg"/>
+                            <Image width={480} height={720} className={ utilStyles.galleryImg } src="/images/portraits/DSC6654.jpg"/>
                         </Col>
 
                     </Row>
@@ -71,7 +71,7 @@ export default function Gallery() {
             </section>
 
             <section>
-                <div className="block">
+                <div className={ utilStyles.block }>
                     <h3>for more examples of my work, visit my instagram page</h3>
                     <a href="https://www.instagram.com/ag.photography.etc/" target="_blank" className={ utilStyles.emailPhone }><h3>@ag.photography.etc</h3></a>
                 </div>

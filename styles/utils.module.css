@@ -167,7 +167,7 @@
 }
 
 
-/* ***** about ***** */
+/* ***** About ***** */
 .aboutPics {
   max-width: 25vw; 
   min-width: 25vw;
@@ -175,6 +175,29 @@
 }
 @media (max-width: 992px) {
   .aboutPics {
+    min-width: 100vw;
+  }
+}
+
+
+/* ***** Gallery ***** */
+.galleryImg {
+  max-width: 25vw; 
+  min-width: 25vw;
+  height: auto;
+}
+.imageCols {
+  max-width: 25vw; 
+  min-width: 25vw;
+  height: auto;
+}
+@media (max-width: 991px) {
+  .galleryImg, .imageCols {
+    min-width: 50vw;
+  }
+}
+@media (max-width: 767px) {
+  .galleryImg, .imageCols {
     min-width: 100vw;
   }
 }
