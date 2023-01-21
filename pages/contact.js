@@ -17,16 +17,11 @@ export default function Contact() {
                 <title>Contact | {siteTitle}</title>
             </Head>
 
-            <div  className={` ${utilStyles.container} ${ utilStyles.parallax } `} style={{ backgroundImage: 'url(/images/scenes/DSC09798.jpg)', width:'100vw', minHeight: '600px', textAlign: 'center', boxShadow: "inset 0 0 0 1000px #ffffff75", padding:20 }}>
+            <div  className={` ${utilStyles.container} ${ utilStyles.parallax } `} style={{ backgroundImage: 'url(/images/scenes/DSC09798.jpg)', width:'100vw', minHeight: '600px', textAlign: 'center', boxShadow: "inset 0 0 0 1000px #ffffff75", padding: 0, margin: 0 }}>
 
-
-
-                <div style={{background: "#ffffffa8", backdropFilter: "blur(5px)", padding: "20px", minWidth: "380px", width: "45vw", textAlign: "center", margin: "auto", padding: '20px' }} className="text-center justify-content-center">
-
-
+                <div style={{background: "#ffffffa8", backdropFilter: "blur(5px)", padding: "20px", minWidth: "380px", width: "45vw", textAlign: "center", margin: "auto" }} className="text-center justify-content-center">
                   <div>
-
-                    <div style={{ maxWidth: 1000, padding: 20 }}>
+                    <div style={{ maxWidth: 800, padding: 20 }}>
                         <h2>Contact me!</h2>
                         <br/>
 
