@@ -16,9 +16,10 @@ export default function Gallery() {
                 <title>{siteTitle}</title>
             </Head>
 
-            <br/>
-            <h2>Here is my gallery</h2>
-            <h3>here are just a few pictures that show my style of photography</h3>
+            <section className={ utilStyles.block }>
+                <h2>Here is my gallery</h2>
+                <h3>here are just a few pictures that show my style of photography</h3>
+            </section>
 
             <section>
                 <div className={ utilStyles.container}>
