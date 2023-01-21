@@ -34,8 +34,8 @@ export default function Home() {
       </Head> 
 
       <section className={` ${utilStyles.container} ${ utilStyles.parallax } `} style={{ backgroundImage: "url('/images/my-family/DSC00334-Edit.jpg')", minHeight: '600px', boxShadow: "inset 0 0 0 1000px #ffffff75"}}>
-        <Image width={1920} height={600} priority style={{ display: 'none' }} src="/images/my-family/DSC00334-Edit.jpg" alt="" />
-        
+        <img width={1920} height={600} priority style={{ display: 'none' }} src="/images/my-family/DSC00334-Edit.jpg" alt="" />
+
         <div style={{background: "#ffffff7a", backdropFilter: "blur(5px)", minWidth:" 300px"}} className={ utilStyles.parallaxText }>
 
           <h3>Central Valley photographer for</h3>
