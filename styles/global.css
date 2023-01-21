@@ -75,8 +75,9 @@ h3 {
 h4 {
   text-transform: uppercase !important;
   color: #C89687;
-  font-size: 18px !important;
+  font-size: 16px !important;
   font-weight: normal;
+  text-align: center;
 }
 
 p { 
@@ -130,6 +131,17 @@ section {
   gap: 20px;
   padding: 20px;
   margin-bottom: 20px;
+}
+.images-container {
+  display: flex;
+  gap: 0px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+.images-container img {
+  scroll-snap-align: center;
+  height: 300px;
+  width: auto;
 }
 
 .carousel {

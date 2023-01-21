@@ -7,8 +7,6 @@ import utilStyles from '../styles/utils.module.css';
 import Date from '../components/date';
 import PriceCards from '../components/price';
 import Row from 'react-bootstrap/Row';
-import { Rerousel } from 'rerousel';
-import { useRef } from 'react';
 
 const responsive = {
     desktop: {
@@ -44,7 +42,6 @@ export default function Services() {
         "/images/couples/untitled-14.jpg",
         "/images/children/DSC01627.jpg"
       ];
-    const imgCarousel = useRef(null);
 
     return ( 
         <Layout services>
@@ -54,8 +51,8 @@ export default function Services() {
             </Head>
 
             <section className={ utilStyles.container }>
-                <Rerousel itemRef={ imgCarousel } interval={3000}>
-                    <img src="/images/children/DSC02772.jpg" ref={imgCarousel} className={ utilStyles.carouselImages}/>
+                <div className="images-container carousel">
+                    <img src="/images/children/DSC02772.jpg" className={ utilStyles.carouselImages}/>
                     <img src="/images/children/03-20 Viri Unicorn-020-12.jpg" className={ utilStyles.carouselImages}/>
                     <img src="/images/portraits/untitled-16.jpg" className={ utilStyles.carouselImages}/>
                     <img src="/images/portraits/DSC6735.jpg" className={ utilStyles.carouselImages}/>
@@ -66,8 +63,9 @@ export default function Services() {
                     <img src="/images/portraits/DSC07946.jpg" className={ utilStyles.carouselImages}/>
                     <img src="/images/couples/untitled-14.jpg" className={ utilStyles.carouselImages}/>
                     <img src="/images/children/DSC01627.jpg" className={ utilStyles.carouselImages}/>
-                </Rerousel>
+                </div>
             </section>
+            <br />
 
             <section>
                 <div className={ utilStyles.block }>
@@ -82,6 +80,7 @@ export default function Services() {
                     <h4>SO LET'S CREATE THEM NOW, AND MAKE SURE YOU ARE ON THE RIGHT SIDE OF THE CAMERA</h4>
                 </div>
             </section>
+            <br />
 
             <section className={` ${utilStyles.container} ${ utilStyles.parallax } `} style={{ backgroundImage: "url('images/scenes/DSC02382.jpg')", minHeight: '400px' }}>
 
@@ -89,13 +88,14 @@ export default function Services() {
 
                     <h2>Investment</h2>
                     <h3>There's so much more to photography than the click of a shutter</h3>
-                    <p className="block">
+                    <p>
                         I’ve spent years working hard on my craft, investing in gear, and education. Your investment reflects the value of the skills I’ve acquired and the services I provide. I go the extra mile diving deep into your story making sure we capture your unique legacy. Exactly as you remember it. 
                     </p>
                     
                 </div>
             
             </section>
+            <br />
 
             <section>
                 <div className={ utilStyles.block }>
@@ -110,7 +110,7 @@ export default function Services() {
 
             <section>
                 <div className={ utilStyles.container }>
-                    <div className={ utilStyles.rowAround }>
+                    <div className={ utilStyles.rowAround } style={{ gap: 20 }}>
                         <PriceCards
                             header= "Short n' Sweet"
                             topimage="images/families/02-26 Celina Almonds-015-9.jpg"
@@ -152,6 +152,7 @@ export default function Services() {
                     <a href="/contact"><button>Contact me</button></a>
                 </div>
             </section>
+            <br />
 
         </Layout>
     

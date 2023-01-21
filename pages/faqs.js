@@ -28,10 +28,11 @@ export default function FAQs() {
             <div className={ utilStyles.block }>
                 <br/>
                 <h2>Here are some frequently asked questions</h2>
+                <br />
             </div>
 
             <section>
-                <div className={ utilStyles.block }>
+                <div className={ utilStyles.block } style={{ width: '90vw'}}>
 
                     <Accordion defaultActiveKey="0" flush>
 
@@ -83,6 +84,7 @@ export default function FAQs() {
                     </a>
                 </div>
             </section>
+            <br />
 
         </Layout>
     

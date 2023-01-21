@@ -33,7 +33,7 @@ export default function Home() {
         <title>{siteTitle}</title>
       </Head> 
 
-      <section className={` ${utilStyles.container} ${ utilStyles.parallax } `} style={{ backgroundImage: "url('/images/my-family/DSC00334-Edit.jpg')", minHeight: '600px', boxShadow: "inset 0 0 0 1000px #ffffff75"}}>
+      <section className={` ${utilStyles.container} ${ utilStyles.parallax } `} style={{ backgroundImage: "url('/images/my-family/DSC00334-Edit.jpg')", minHeight: '600px', boxShadow: "inset 0 0 0 1000px #ffffff4c"}}>
         <img width={1920} height={600} priority style={{ display: 'none' }} src="/images/my-family/DSC00334-Edit.jpg" alt="" />
 
         <div style={{background: "#ffffff7a", backdropFilter: "blur(5px)", minWidth:" 300px"}} className={ utilStyles.parallaxText }>
@@ -45,14 +45,13 @@ export default function Home() {
         </div>
 
       </section>
-    
+      <br />
     
       <section >
           <div className={ utilStyles.block }>
               <div className={ utilStyles.rowToCol }>
                   <div>
                       <h2>Welcome to my page!</h2>
-                      <br/>
                       <br/>
                       <p>
                           Like having beautiful background sceneries that fuel you and your kids' energy? Well you are in luck! I am a natural light photographer that edits in a light and vibrant style. <br/>
@@ -70,7 +69,8 @@ export default function Home() {
       <section className={` ${utilStyles.container} ${ utilStyles.parallax } `} style={{ backgroundImage: "url('images/scenes/DSC02443.jpg')", minHeight: '250px'}}>
 
         <div className={ utilStyles.parallaxText }>
-          <h3>AG Photography etc helps you capture beautiful picture and keeps everyone having stress-free fun</h3>
+          <h3>AG Photography etc helps you capture beautiful picture and keeps everyone having stress-free fun</h3> 
+          <br/>
           <h4>IT CAN BE A FAMILY OF 5 OR A FAMILY OF 2, OR PORTRAITS OF ANYONE IN YOUR FAMILY!</h4>
         </div>
           
@@ -78,11 +78,17 @@ export default function Home() {
   
       <section>
           <div className={ utilStyles.container }>
-
-            <h2><br/>Testimonials</h2>
-            <h3>here's what a couple of families had to say about their photos and the experience!</h3>
+            <br/>
+            <div className={ utilStyles.block }>
+              <h2>Testimonials</h2>
+              <h3>here's what a couple of families had to say about their photos and the experience!</h3>
+            </div>
 
             <div className='scrolling-wrapper carousel'>
+              <TestimonialCards
+                name= "Angela"
+                topimage= "images/portraits/DSC6735.jpg"
+                review= "Loved having her take pictures of me!!! She was so kind and friendly and made me feel super comfortable. She gave me ideas on how to pose and what poses or faces looked better on me so I had no bad angles!!! Would def recommend to anyone" />
               <TestimonialCards
                 name= "The Morales Family"
                 topimage= "images/children/DSC09906-Edit.jpg"
@@ -95,10 +101,6 @@ export default function Home() {
                 name= "The Moreno Family"
                 topimage= "images/families/DSC09301.jpg"
                 review= "Thank you so much they all look so cute (emoji) even though they were just all over the place" />
-              <TestimonialCards
-                name= "Angela"
-                topimage= "images/portraits/DSC6735.jpg"
-                review= "Loved having her take pictures of me!!! She was so kind and friendly and made me feel super comfortable. She gave me ideas on how to pose and what poses or faces looked better on me so I had no bad angles!!! Would def recommend to anyone" />
               <TestimonialCards
                 name= "The Contreras Family"
                 topimage= "images/children/DSC00800.jpg"
@@ -121,12 +123,13 @@ export default function Home() {
       </section>
 
       <div className={ utilStyles.container }>
-          <div className="block text-center">
+          <div className={`${ utilStyles.block } text-center`}>
               <h3>experience a session for yourself!</h3>
               <a href="/contact"><button>Contact me</button></a>
+              
           </div>
       </div>
-
+      <br />
 
     </Layout>
   )

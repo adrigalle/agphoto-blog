@@ -9,7 +9,7 @@ import Stack from 'react-bootstrap/Stack';
 
 export default function Footer() {
     return (
-        <section className={ utilStyles.container } style={{ marginTop: '20px', marginBottom: '20px' }}>
+        <section className={ utilStyles.container } style={{ marginBottom: '20px', paddingBottom: '20px' }}>
 
             <div className={ styles.instagram }>
 

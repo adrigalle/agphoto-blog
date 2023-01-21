@@ -17,8 +17,10 @@ export default function Gallery() {
             </Head>
 
             <section className={ utilStyles.block }>
+                <br />
                 <h2>Here is my gallery</h2>
                 <h3>here are just a few pictures that show my style of photography</h3>
+                <br />
             </section>
 
             <section>
@@ -73,10 +75,12 @@ export default function Gallery() {
 
             <section>
                 <div className={ utilStyles.block }>
+                    <br />
                     <h3>for more examples of my work, visit my instagram page</h3>
-                    <a href="https://www.instagram.com/ag.photography.etc/" target="_blank" className={ utilStyles.emailPhone }><h3>@ag.photography.etc</h3></a>
+                    <a href="https://www.instagram.com/ag.photography.etc/" target="_blank" className={ utilStyles.emailPhone }><h3 style={{ color: "#C89687"}}>@ag.photography.etc</h3></a>
                 </div>
             </section>
+            <br />
 
         </Layout>
     

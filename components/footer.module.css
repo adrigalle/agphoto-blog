@@ -17,9 +17,9 @@
     min-height: 100%;
     opacity: 0.5;
 }
-@media (max-width: 1500px) {
+@media (max-width: 1000px) {
     .instagramImg{
-        min-width: 1920px;
+        min-width: 1000px;
     }
 }
 .instaContent {

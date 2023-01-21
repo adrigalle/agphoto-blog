@@ -12,7 +12,8 @@ export default function About() {
             <Head>
                 <title>About | {siteTitle}</title>
             </Head>
- 
+
+            <br />
             <section>
                 <div className={ utilStyles.block }>
                     <div className={ utilStyles.rowToCol }>
@@ -31,8 +32,9 @@ export default function About() {
                 </div>
             </section>
 
-            <section className={` ${utilStyles.container} ${ utilStyles.parallax } `} style={{ backgroundImage: "url('images/families/DSC01518-cropped.jpg')", minHeight: '500px'}}>
+            <section className={` ${utilStyles.container} ${ utilStyles.parallax } `} style={{ backgroundImage: "url('images/families/DSC01518-cropped.jpg')", minHeight: '500px', boxShadow: "inset 0 0 0 1000px #ffffff5e" }}>
             </section>
+            <br/>
 
             <section>
                 <div className={ utilStyles.block }>
@@ -63,13 +65,15 @@ export default function About() {
                     </div>
                 </div>
             </section>
+            <br />
 
             <section className={` ${ utilStyles.container } ${ utilStyles.rowToCol }` } style={{ maxWidth: "100vw", gap: 0 }}>
-                <Image src="/images/scenes/DSC07453.jpg" width={480} height={720} className={ utilStyles.aboutPics}/>
+                <Image src="/images/scenes/DSC07453.jpg" width={480} height={720} priority className={ utilStyles.aboutPics}/>
                 <Image src="/images/dogs/DSC09251.jpg" width={480} height={720} className={ utilStyles.aboutPics}/>
                 <Image src="/images/dogs/DSC00522.jpg" width={480} height={720} className={ utilStyles.aboutPics}/>
                 <Image src="/images/my-family/DSC02368.jpg" width={480} height={720} className={ utilStyles.aboutPics}/>
             </section>
+            <br />
 
             <section>
                 <div className={ utilStyles.block }>
@@ -87,7 +91,7 @@ export default function About() {
                         ANYWAY, THANK YOU SO MUCH FOR TAKING THE TIME IN GETTING TO KNOW ME, AND NOW IT MY TURN TO GET TO KNOW YOU! SHOOT ME A MESSAGE AND LET'S GET YOU ON THE RIGHT SIDE OF THE CAMERA!
                     </h4>
                     <br/>
-                    <div  className='text-center'>
+                    <div className='text-center'>
                         <a href="/contact">
                             <button>Let's Chat!</button>
                         </a>
@@ -95,6 +99,7 @@ export default function About() {
                     
                 </div>
             </section>
+            <br />
 
         </Layout>
     )
