@@ -68,8 +68,9 @@
 }
 
 .block {
-    padding: 40px; 
+    padding: 30px; 
     max-width: 900px; 
+    min-width: 350px;
     width: 95vw;
     margin:0 auto; 
     text-align:justify;
