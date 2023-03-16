@@ -115,15 +115,15 @@ export default function Services() {
                             header= "Short n' Sweet"
                             topimage="images/families/02-26 Celina Almonds-015-9.jpg"
                             description="This little session is perfect for busy families, kids that will not allow for more than just 30 minutes, or those that only need a couple of updated photos."
-                            price="Starting at: $125"
-                            item1="Up to 30 minutes"
+                            price="Starting at: $150"
+                            item1="Apporximately 30 minutes"
                             item2="10 Edited Images"
                          />
                          <PriceCards
                             header= "Perfecto"
                             topimage="images/couples/DSC01797.jpg"
                             description="The perfect amount of time needed to get a really good variety of photos with you family, just you, just your special someone, or whatever you like!"
-                            price="Starting at: $200"
+                            price="Starting at: $225"
                             item1="Up to 60 minutes"
                             item2="20 Edited Images"
                             
@@ -132,7 +132,7 @@ export default function Services() {
                             header= "Abundance!"
                             topimage="images/families/DSC07951.jpg"
                             description="With how fast I can go, this might be overkill for some, but it is great for larger families, those that want multiple outfit changes, or just taking it easy."
-                            price="Starting at: $275"
+                            price="Starting at: $300"
                             item1="Up to 90 minutes"
                             item2="All edited images (60+)"
                             
