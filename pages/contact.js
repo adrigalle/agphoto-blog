@@ -21,7 +21,8 @@ export default function Contact() {
 
                 <div style={{background: "#ffffffa8", backdropFilter: "blur(5px)", padding: "20px", minWidth: "380px", width: "45vw", textAlign: "center", margin: "auto" }} className="text-center justify-content-center">
                   <div>
-                    <div style={{ maxWidth: 800, padding: 20 }}>
+                    <div style={{ maxWidth: 800, padding: 20, margin: "auto" }}>
+
                         <h2>Contact me!</h2>
                         <br/>
 
