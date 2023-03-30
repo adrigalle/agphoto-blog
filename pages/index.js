@@ -86,6 +86,10 @@ export default function Home() {
 
             <div className='scrolling-wrapper carousel'>
               <TestimonialCards
+                name= "The Segoviano Family"
+                topimage= "images/portraits/DSC08951.jpg"
+                review= "Adriana is so kind and professional. We love all of the pictures from our mini session and so we bought it all 😄 Thank you Adriana for making our first professional photography session experience so much fun, relax and memorable. We look forward in the future to work with her again. PS We’re from Fresno but the drive was really worth it." />
+              <TestimonialCards
                 name= "Angela"
                 topimage= "images/portraits/DSC6735.jpg"
                 review= "Loved having her take pictures of me!!! She was so kind and friendly and made me feel super comfortable. She gave me ideas on how to pose and what poses or faces looked better on me so I had no bad angles!!! Would def recommend to anyone" />
